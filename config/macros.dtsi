@@ -14,7 +14,7 @@ macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
 label = "macro_alttab";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LALT>, <&kp TAB>, <&macro_release &kp LALT> <&mt LALT &none>;
+bindings = <&macro_press &kp LALT>, <&kp TAB>, <&macro_release &kp LALT> <&mt LALT>;
 };
 macro_cmd_space: macro_cmd_space{
 compatible = "zmk,behavior-macro";
