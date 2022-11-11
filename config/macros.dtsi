@@ -8,19 +8,19 @@ macro_cb_paste_vim: macro_cb_paste_vim{
 compatible = "zmk,behavior-macro";
 label = "macro_cb_paste_vim";
 #binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp PLUS>, <&kp P>;
+bindings = <&kp DQT>, <&kp PLUS>, <&kp P>;
 };
 macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
 label = "macro_alttab";
 #binding-cells = <0>;
-bindings = <&kp LALT>, <&kp TAB>;
+bindings = <&macro_press &kp LALT>, <&kp TAB>, <&macro_release &kp LALT>;
 };
 macro_cmd_space: macro_cmd_space{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_space";
 #binding-cells = <0>;
-bindings = <&kp LEFT_COMMAND>, <&kp SPACE>;
+bindings = <&macro_press &kp LEFT_COMMAND>, <&kp SPACE>, <&macro_release &kp LEFT_COMMAND>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
