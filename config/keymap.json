@@ -9,7 +9,8 @@
     "mod",
     "layer#4",
     "Linux",
-    "linux fn"
+    "linux fn",
+    "MEDIA"
   ],
   "layers": [
     [
@@ -54,6 +55,12 @@
        "&trans", "&trans", "&trans",                "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans",                                           "&trans",  "&trans",  "&trans", "&kp LEFT", "&kp DOWN", "&kp UP", "&kp RIGHT", "&trans", "&trans",
        "&trans", "&trans", "&trans", "&macro_chrome_console", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",                       "&trans",  "&trans",  "&trans",   "&trans",   "&trans", "&trans",    "&trans", "&trans", "&trans",
        "&trans", "&trans", "&trans",                "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans",                       "&trans",  "&trans",  "&trans",   "&trans",   "&trans"
+    ], [
+       "&kp C_BRIGHTNESS_DEC", "&kp C_BRIGHTNESS_INC", "&kp C_CAPTIONS", "&kp C_REWIND", "&kp C_FAST_FORWARD", "&kp C_PIP",           "&tog 1",  "&mo 3", "&kp C_PREV", "&kp C_PAUSE", "&kp C_NEXT", "&kp C_MUTE", "&kp C_VOLUME_DOWN", "&kp C_VOLUME_UP",
+                     "&trans",               "&trans",         "&trans",       "&trans",             "&trans",    "&trans",           "&trans", "&trans",     "&trans",      "&trans",     "&trans",     "&trans",            "&trans",          "&trans",
+                     "&trans",               "&trans",         "&trans",       "&trans",             "&trans",    "&trans",           "&trans", "&trans",     "&trans",                                  "&trans",            "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+                     "&trans",               "&trans",         "&trans",       "&trans",             "&trans",    "&trans",           "&trans", "&trans",     "&trans",      "&trans",     "&trans",     "&trans",            "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+                     "&trans",               "&trans",         "&trans",       "&trans",             "&trans",    "&trans",           "&trans", "&trans",     "&trans",      "&trans",     "&trans",     "&trans",            "&trans",          "&trans", "&trans", "&trans"
     ]
   ]
 }
