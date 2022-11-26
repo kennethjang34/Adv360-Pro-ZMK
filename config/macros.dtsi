@@ -2,13 +2,13 @@ macro_chrome_devtools: macro_chrome_devtools{
 compatible = "zmk,behavior-macro";
 label = "macro_chrome_devtools";
 #binding-cells = <0>;
-bindings = <&macro_press &kp RIGHT_COMMAND>, <&macro_press &kp RIGHT_ALT>, <&macro_tap &kp I>,<&macro_release &kp RIGHT_ALT>, <&macro_release &kp RIGHT_COMMAND>;
+bindings = <&macro_press &kp RIGHT_COMMAND>, <&macro_press &kp RIGHT_ALT>, <&macro_tap &kp I,&macro_release &kp RIGHT_ALT>, <&macro_release &kp RIGHT_COMMAND>;
 };
 macro_chrome_console: macro_chrome_console{
 compatible = "zmk,behavior-macro";
 label = "macro_chrome_console";
 #binding-cells = <0>;
-bindings = <&macro_press &kp RIGHT_COMMAND>, <&macro_press &kp RIGHT_ALT>, <&macro_tap &kp J>,<&macro_release &kp RIGHT_ALT>, <&macro_release &kp RIGHT_COMMAND>;
+bindings = <&macro_press &kp RIGHT_COMMAND>, <&macro_press &kp RIGHT_ALT>, <&macro_tap &kp J,&macro_release &kp RIGHT_ALT>, <&macro_release &kp RIGHT_COMMAND>;
 };
 macro_save_vim: macro_save_vim{
 compatible = "zmk,behavior-macro";
