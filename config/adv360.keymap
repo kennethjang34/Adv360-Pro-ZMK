@@ -22,13 +22,8 @@
 		compatible = "zmk,combos";
 		combo_layer_7 {
 			timeout-ms = <50>;
-			key-positions = <15 16>;
+			key-positions = <42 54>;
 			bindings = <&mo 7>;
-		};
-		combo_test_7 {
-			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&kp T>;
 		};
     };
 };
@@ -102,17 +97,6 @@
             >;
         };
 
-        layer_MEDIA {
-            bindings = <
- &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_CAPTIONS  &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp C_PREV  &kp C_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
-               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans
-               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans                               &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans
-            >;
-        };
-
-    };
 
         layer_Linux {
             bindings = <
@@ -133,5 +117,17 @@
  &trans  &trans  &trans                 &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans                        &trans   &trans   &trans    &trans    &trans
             >;
         };
+
+        layer_MEDIA {
+            bindings = <
+ &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_CAPTIONS  &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp C_PREV  &kp C_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
+               &kp T                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans
+               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans                               &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans
+            >;
+        };
+
+    };
 
 };
