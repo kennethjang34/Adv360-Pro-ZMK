@@ -18,15 +18,16 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 / {
- 	combos {
+	combos {
 		compatible = "zmk,combos";
 		combo_layer_7 {
 			timeout-ms = <50>;
-			key-positions = <0 1>;
+			key-positions = <15 16>;
 			bindings = <&mo 7>;
 		};
     };
 };
+
 / {
   behaviors {
     #include "macros.dtsi"
