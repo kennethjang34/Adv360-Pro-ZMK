@@ -22,7 +22,7 @@
 		compatible = "zmk,combos";
 		combo_layer_7 {
 			timeout-ms = <50>;
-			key-positions = <41 53>;
+			key-positions = <0 1>;
 			bindings = <&mo 7>;
 		};
     };
