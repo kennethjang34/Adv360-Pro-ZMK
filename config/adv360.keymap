@@ -17,16 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
-/ {
-	combos {
-		compatible = "zmk,combos";
-		combo_layer_7 {
-			timeout-ms = <50>;
-			key-positions = <42 54>;
-			bindings = <&kp>;
-		};
-    };
-};
 
 / {
   behaviors {
@@ -51,9 +41,9 @@
             bindings = <
  &kp EQUAL     &kp N1                &kp N2        &kp N3   &kp N4         &kp N5                          &tog 1      &mo 3                       &kp N6                   &kp N7     &kp N8                 &kp N9             &kp N0  &kp MINUS
    &kp TAB      &kp Q                 &kp W         &kp E    &kp R          &kp T                          &kp UP   &kp LEFT                        &kp Y                    &kp U      &kp I                  &kp O              &kp P   &kp BSLH
-   &kp ESC      &kp A                 &kp S         &kp D    &kp F          &kp G                        &kp DOWN  &kp LCTRL                     &kp LALT                                              &kp RIGHT_ALT  &kp RIGHT_COMMAND  &kp RIGHT     &kp H            &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
- &kp LSHFT      &kp Z                 &kp X         &kp C    &kp V          &kp B                           &none      &none                    &kp SPACE                    &none      &none  &mt RIGHT_ALT PAGE_UP              &none      &none     &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH    &mo 4
-     &mo 2  &kp GRAVE  &mt LEFT_CONTROL END  &kp LEFT_ALT  &kp TAB  &kp BACKSPACE            &mt LEFT_COMMAND DEL  &kp ENTER  &mt RIGHT_COMMAND PAGE_DOWN  &mt RIGHT_CONTROL ENTER  &kp SPACE          &kp RIGHT_ALT            &kp TAB   &kp LBKT  &kp RBKT  &mo 7
+   &kp ESC      &kp A                 &kp S         &kp D    &kp F          &kp G                        &kp DOWN  &kp LCTRL                     &kp LALT                                              &kp RIGHT_ALT  &kp RIGHT_COMMAND  &kp RIGHT     &kp H   &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
+ &kp LSHFT      &kp Z                 &kp X         &kp C    &kp V          &kp B                           &none      &none                    &kp SPACE                    &none      &none  &mt RIGHT_ALT PAGE_UP              &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH    &mo 4
+     &mo 2  &kp GRAVE  &mt LEFT_CONTROL END  &kp LEFT_ALT  &kp TAB  &kp BACKSPACE            &mt LEFT_COMMAND DEL  &kp ENTER  &mt RIGHT_COMMAND PAGE_DOWN  &mt RIGHT_CONTROL ENTER  &kp SPACE          &kp RIGHT_ALT            &kp TAB   &kp LBKT  &kp RBKT   &mo 7
             >;
         };
 
@@ -97,7 +87,6 @@
             >;
         };
 
-
         layer_Linux {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans
@@ -120,8 +109,8 @@
 
         layer_MEDIA {
             bindings = <
- &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_CAPTIONS  &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp C_PREV  &kp C_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP
-               &kp T                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans
+ &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_CAPTIONS  &kp C_REWIND  &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp C_PREV  &kp C_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+               &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans
                &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans                               &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
                &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
                &trans                &trans          &trans        &trans              &trans     &trans            &trans  &trans      &trans       &trans      &trans      &trans             &trans           &trans  &trans  &trans
@@ -129,5 +118,4 @@
         };
 
     };
-
 };
