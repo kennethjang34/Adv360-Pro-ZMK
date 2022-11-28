@@ -109,11 +109,21 @@
 
         layer_MEDIA {
             bindings = <
- &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC   &kp C_CAPTIONS  &kp K_BACK   &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-               &trans                &trans  &macro_save_vim      &trans               &trans     &trans            &trans  &trans      &trans            &trans      &trans      &trans             &trans           &trans
-               &trans                &trans  &macro_save_vim      &trans               &trans     &trans            &trans  &trans      &trans                                    &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-               &trans                &trans           &trans       &none  &macro_cb_paste_vim     &trans            &trans  &trans      &trans            &trans      &trans      &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-               &trans                &trans           &trans      &trans               &trans     &trans            &trans  &trans      &trans            &trans      &trans      &trans             &trans           &trans  &trans  &trans
+ &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC   &kp C_CAPTIONS          &kp K_BACK   &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+               &trans                &trans  &macro_save_vim              &trans               &trans     &trans            &trans  &trans      &trans            &trans      &trans       &none             &trans           &trans
+               &trans                &trans  &macro_save_vim              &trans               &trans     &trans            &trans  &trans      &trans                                    &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+               &trans                &trans           &trans  &macro_cb_yank_vim  &macro_cb_paste_vim     &trans            &trans  &trans      &trans            &trans      &trans      &trans             &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+               &trans                &trans           &trans              &trans               &trans     &trans            &trans  &trans      &trans            &trans      &trans      &trans             &trans           &trans  &trans  &trans
+            >;
+        };
+
+        layer_linux_Media {
+            bindings = <
+ &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &macro_cb_yank_vim_li  &macro_cb_paste_vim_li  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
