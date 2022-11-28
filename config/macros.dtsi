@@ -2,25 +2,25 @@ macro_vim_paste_0: macro_vim_paste_0{
 compatible = "zmk,behavior-macro";
 label = "macro_vim_paste_0";
 #binding-cells = <0>;
-bindings = <&kp DOUBLE_QUOTES>, <&kp N0>, <&kp P>;
+bindings = <&kp ESC>, <&kp DOUBLE_QUOTES>, <&kp N0>, <&kp P>, <&kp ENTER>;
 };
 macro_cb_paste_vim_li: macro_cb_paste_vim_li{
 compatible = "zmk,behavior-macro";
 label = "macro_cb_paste_vim_li";
 #binding-cells = <0>;
-bindings = <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp P>;
+bindings = <&kp ESC>, <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp P>, <&kp ENTER>;
 };
 macro_cb_yank_vim_li: macro_cb_yank_vim_li{
 compatible = "zmk,behavior-macro";
 label = "macro_cb_yank_vim_li";
 #binding-cells = <0>;
-bindings = <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp Y>;
+bindings = <&kp ESC>, <&kp DOUBLE_QUOTES>, <&kp PLUS>, <&kp Y>, <&kp ENTER>;
 };
 macro_cb_yank_vim: macro_cb_yank_vim{
 compatible = "zmk,behavior-macro";
 label = "macro_cb_yank_vim";
 #binding-cells = <0>;
-bindings = <&kp DOUBLE_QUOTES>, <&kp ASTERISK>, <&kp Y>;
+bindings = <&kp ESC>, <&kp DOUBLE_QUOTES>, <&kp ASTERISK>, <&kp Y>, <&kp ENTER>;
 };
 macro_chrome_devtools: macro_chrome_devtools{
 compatible = "zmk,behavior-macro";
@@ -50,7 +50,7 @@ macro_save_vim: macro_save_vim{
 compatible = "zmk,behavior-macro";
 label = "macro_save_vim";
 #binding-cells = <0>;
-bindings = <&kp COLON>, <&kp W>, <&kp ENTER>;
+bindings = <&kp ESC>, <&kp COLON>, <&kp W>, <&kp ENTER>;
 };
 macro_cb_paste_vim: macro_cb_paste_vim{
 compatible = "zmk,behavior-macro";
