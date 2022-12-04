@@ -93,7 +93,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans                  &trans  &kp RCTRL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &mo 6   &mo 8  &trans  &trans  &trans  &trans            &kp LCTRL  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+ &tog 6   &mo 8  &trans  &trans  &trans  &trans            &kp LCTRL  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
             >;
         };
 
