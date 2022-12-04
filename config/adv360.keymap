@@ -31,7 +31,6 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-  };
 
 	td0: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
@@ -39,7 +38,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <175>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
-	}
+	};
 
 	td1: tap_dance_1 {
 			compatible = "zmk,behavior-tap-dance";
@@ -47,7 +46,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <175>;
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
-	}
+	};
 
 	td2: tap_dance_2 {
 			compatible = "zmk,behavior-tap-dance";
@@ -55,8 +54,9 @@
             #binding-cells = <0>;
             tapping-term-ms = <175>;
             bindings = <&mt LEFT_COMMAND DEL>, <&kp LEFT_CONTROL>, <&kp LEFT_ALT>;
-	}
+	};
 
+};
     keymap {
         compatible = "zmk,keymap";
 
