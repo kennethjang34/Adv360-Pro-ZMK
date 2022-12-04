@@ -33,6 +33,14 @@
     };
   };
 
+	td0: tap_dance_0 {
+			compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <175>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
+	}
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,7 +90,7 @@
        &trans      &trans           &trans                &trans                 &trans          &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
        &trans   &kp GRAVE  &kp EXCLAMATION           &kp AT_SIGN              &kp POUND       &kp TILDE            &kp LT        &trans    &trans  &trans  &trans  &trans  &trans  &trans
  &kp QUESTION  &kp DOLLAR        &kp CARET         &kp AMPERSAND           &kp ASTERISK       &kp EQUAL            &kp GT  &kp QUESTION  &kp PIPE                  &trans  &trans  &trans  &trans  &trans          &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
-     &kp PIPE   &kp MINUS         &kp PLUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE            &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES    &kp LEFT_BRACE    &kp RIGHT_BRACE             &trans
+     &kp PIPE   &kp MINUS         &kp PLUS  &td0  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE            &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES    &kp LEFT_BRACE    &kp RIGHT_BRACE             &trans
        &trans      &trans      &kp PERCENT        &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans            &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
