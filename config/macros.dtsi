@@ -64,7 +64,7 @@ label = "macro_alttab";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT>;
 };
-macro_cmd_option_c: macro_cmd_space{
+macro_cmd_option_c: macro_cmd_option_c{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_option_c";
 #binding-cells = <0>;
