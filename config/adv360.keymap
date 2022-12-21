@@ -89,11 +89,11 @@
 
         layer_Linux {
             bindings = <
-  &mo 1  &trans     &trans  &trans  &trans  &trans               &trans         &mo 3         &trans  &trans  &trans             &trans   &trans      &mo 2
- &trans  &trans     &trans  &trans  &trans  &trans               &kp UP      &kp LEFT         &trans  &trans  &trans             &trans   &trans     &trans
- &trans  &trans     &trans  &trans  &trans  &trans             &kp DOWN         &mo 8   &kp LEFT_ALT                  &kp RIGHT_COMMAND    &mo 1  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans     &trans  &trans  &trans  &trans               &trans        &trans      &kp SPACE  &trans  &trans             &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  &mo 6   &mo 1  &kp LCTRL  &trans   &mo 8  &trans            &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &trans  &trans          &kp RCTRL  &kp TAB     &trans  &trans   &mo 8
+  &mo 1  &trans  &trans  &trans  &trans  &trans               &trans         &mo 3         &trans  &trans  &trans             &trans   &trans      &mo 2
+ &trans  &trans  &trans  &trans  &trans  &trans               &kp UP      &kp LEFT         &trans  &trans  &trans             &trans   &trans     &trans
+ &trans  &trans  &trans  &trans  &trans  &trans             &kp DOWN         &mo 8   &kp LEFT_ALT                  &kp RIGHT_COMMAND    &mo 1  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans               &trans        &trans      &kp SPACE  &trans  &trans             &trans   &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  &mo 6   &mo 1  &trans  &trans  &trans  &trans            &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &trans  &trans          &kp RCTRL  &kp TAB     &trans  &trans   &mo 8
             >;
         };
 
