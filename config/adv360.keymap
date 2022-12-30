@@ -111,8 +111,8 @@
             bindings = <
  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC   &kp C_CAPTIONS            &kp K_BACK     &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp K_PREV  &kp K_PLAY_PAUSE        &kp K_NEXT         &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
                &trans                &trans  &macro_save_vim                 &kp E                 &trans     &trans            &trans  &trans      &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &macro_vim_paste_0           &trans
-               &trans               &kp TAB    &kp BACKSPACE        &kp LEFT_BRACE        &kp RIGHT_BRACE     &trans            &trans   &mo 7      &trans                                                 &trans               &mo 1           &trans  &trans  &kp SPACE   &kp BACKSPACE  &kp RIGHT_BRACKET  &kp TAB  &trans
-               &trans                &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &trans            &trans  &trans      &trans            &trans            &trans             &trans              &trans           &trans  &trans     &trans  &kp UNDERSCORE        &kp PERCENT   &trans  &trans
+               &trans               &kp TAB    &kp BACKSPACE        &kp LEFT_BRACE        &kp RIGHT_BRACE     &trans            &trans   &mo 7      &trans                                                 &trans               &mo 1           &trans  &trans  &kp SPACE   &kp BACKSPACE      &kp TAB  &kp QUESTION  &trans
+               &trans                &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &trans            &trans  &trans      &trans            &trans            &trans             &trans              &trans           &trans  &trans     &trans  &kp UNDERSCORE  &kp PERCENT      &kp PIPE  &trans
                &trans                &trans           &trans                &trans                 &trans     &trans            &trans  &trans      &trans            &trans            &trans             &trans              &trans           &trans  &trans     &trans
             >;
         };
