@@ -45,11 +45,11 @@
            "&kp PIPE",  "&kp MINUS",        "&kp PLUS", "&kp LEFT_PARENTHESIS", "&kp RIGHT_PARENTHESIS", "&kp UNDERSCORE",           "&trans",       "&trans",   "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&kp DOUBLE_QUOTES",   "&kp LEFT_BRACE",   "&kp RIGHT_BRACE",            "&trans",
              "&trans",     "&trans",     "&kp PERCENT",       "&kp LEFT_BRACE",       "&kp RIGHT_BRACE",         "&trans",           "&trans",       "&trans",   "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"
     ], [
-        "&mo 1", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",        "&mo 3",       "&trans", "&trans", "&trans",            "&trans",  "&trans",     "&mo 2",
-       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&kp UP",     "&kp LEFT",       "&trans", "&trans", "&trans",            "&trans",  "&trans",    "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",            "&kp DOWN",        "&mo 7", "&kp LEFT_ALT",                     "&kp RIGHT_COMMAND",   "&mo 1", "&kp RIGHT", "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",       "&trans",    "&kp SPACE", "&trans", "&trans",            "&trans",  "&trans",    "&trans", "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans",
-        "&mo 6",  "&mo 1", "&trans", "&trans", "&trans", "&kp BACKSPACE",           "&kp LCTRL", "&kp LEFT_ALT", "&kp CAPSLOCK", "&trans", "&trans",             "&mo 7", "&kp TAB",    "&trans", "&trans", "&kp RIGHT_SHIFT"
+        "&mo 1", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",          "&mo 3",          "&trans", "&trans", "&trans",            "&trans", "&trans",  "&mo 2",
+       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",         "&trans",          "&trans", "&trans", "&trans",            "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",          "&mo 7",       "&kp SPACE",                     "&kp RIGHT_COMMAND",  "&mo 1", "&trans", "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&trans", "&trans", "&trans", "&trans",        "&trans",              "&trans",         "&trans",    "&kp LEFT_ALT", "&trans", "&trans",     "&kp RIGHT_ALT", "&trans", "&trans", "&trans",          "&trans", "&trans", "&trans", "&trans", "&trans",
+        "&mo 6",  "&mo 1", "&trans", "&trans",  "&mo 7", "&kp BACKSPACE",           "&kp LCTRL", "&kp LEFT_SHIFT", "&kp RIGHT_SHIFT", "&trans", "&trans",             "&mo 7", "&trans", "&trans", "&trans", "&kp RIGHT_SHIFT"
     ], [
        "&kp F1", "&kp F2", "&kp F3",                "&kp F4", "&kp F5", "&kp F6",           "&tog 1",  "&mo 3", "&kp F7", "&kp F8", "&kp F9",                      "&kp F10", "&kp F11", "&kp F12",
        "&trans", "&trans", "&trans",                "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&macro_chrome_devtools_linux",  "&trans",  "&trans",
