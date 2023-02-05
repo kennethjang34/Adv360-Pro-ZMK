@@ -58,6 +58,12 @@ label = "macro_cb_paste_vim";
 #binding-cells = <0>;
 bindings = <&macro_tap &kp ESC>, <&macro_tap &kp DQT>, <&macro_tap &kp ASTERISK>, <&macro_tap &kp P>;
 };
+macro_ctrltab: macro_ctrltab{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrltab";
+#binding-cells = <0>;
+bindings = <&macro_press &kp RCTRL>, <&macro_tap &kp TAB>, <&macro_release &kp RCTRL>;
+};
 macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
 label = "macro_alttab";
