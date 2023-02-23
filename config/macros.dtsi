@@ -64,6 +64,12 @@ label = "macro_ctrltab";
 #binding-cells = <0>;
 bindings = <&macro_press &kp RCTRL>, <&macro_tap &kp TAB>, <&macro_release &kp RCTRL>;
 };
+macro_ctrlalt: macro_ctrlalt{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrlalt";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>;
+};
 macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
 label = "macro_alttab";
