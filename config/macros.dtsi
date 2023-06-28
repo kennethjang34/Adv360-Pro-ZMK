@@ -44,7 +44,7 @@ macro_chrome_console_linux: macro_chrome_console_linux{
 compatible = "zmk,behavior-macro";
 label = "macro_chrome_console_linux";
 #binding-cells = <0>;
-bindings = <&macro_press &kp RCTRL>, <&macro_press &kp RSHIFT>, <&macro_tap &kp J>,<&macro_release &kp RSHIFT>, <&macro_release &kp RCTRL>;
+bindings = <&macro_press &kp RCTRL>, <&macro_press &kp RSHIFT>, <&macro_tap &kp J,&macro_release &kp RSHIFT>, <&macro_release &kp RCTRL>;
 };
 macro_save_vim: macro_save_vim{
 compatible = "zmk,behavior-macro";
@@ -68,7 +68,7 @@ macro_ctrlalt: macro_ctrlalt{
 compatible = "zmk,behavior-macro";
 label = "macro_ctrlalt";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_pause_for_release>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>;
+bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LALT>, <&macro_release &kp LALT>, <&macro_release &kp LCTRL>;
 };
 macro_alttab: macro_alttab{
 compatible = "zmk,behavior-macro";
