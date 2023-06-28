@@ -22,11 +22,38 @@
   behaviors {
     #include "macros.dtsi"
 
-    hm: homerow_mods {
+	hht:hold-preferred-hold-tap{
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
+		label="HOLD_PREFERRED_HOLD_TAP";
         #binding-cells = <2>;
         tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "hold-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+	hhtl:hold-preferred-hold-tap-lt{
+        compatible = "zmk,behavior-hold-tap";
+		label="HOLD_PREFERRED_HOLD_TAP_LT";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "hold-preferred";
+        bindings = <&mo>, <&kp>;
+    };
+	bht:balanced-hold-tap{
+        compatible = "zmk,behavior-hold-tap";
+		label="BALANCED_PREFERRED_HOLD_TAP";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+    };
+	tht:tap-preferred-hold-tap{
+        compatible = "zmk,behavior-hold-tap";
+		label="TAP_PREFERRED_HOLD_TAP";
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -35,15 +62,13 @@
 
     keymap {
         compatible = "zmk,keymap";
-
-
         default_layer {
             bindings = <
         &mo 1  &kp N1                          &kp N2                &kp N3          &kp N4         &kp N5              &kp K_PLAY_PAUSE           &mo 3           &kp N6                   &kp N7     &kp N8             &kp N9                               &kp N0                       &mo 2
       &kp TAB   &kp Q                           &kp W                 &kp E           &kp R          &kp T                        &kp UP        &kp LEFT            &kp Y                    &kp U      &kp I              &kp O                                &kp P                    &kp BSLH
-      &kp ESC   &kp A                           &kp S                 &kp D           &kp F          &kp G                      &kp DOWN           &mo 7        &kp SPACE                                      &kp RIGHT_COMMAND                                &mo 1                   &kp RIGHT                   &kp H    &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
- &kp LEFT_GUI   &kp Z                           &kp X                 &kp C           &kp V          &kp B                         &none           &none     &kp LEFT_ALT                    &none      &none      &kp RIGHT_ALT                                &none                       &none                   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH    &mo 4
-        &mo 1   &mo 2  &mt LEFT_CONTROL DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp BACKSPACE            &mt LEFT_SHIFT DEL  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &mt RIGHT_CONTROL ENTER  &kp SPACE          &lt 4 TAB  &mt RIGHT_CONTROL RIGHT_PARENTHESIS  &mt LEFT_BRACKET RIGHT_ALT  &mt RIGHT_BRACKET RGUI  &kp TAB
+      &kp ESC   &kp A                           &kp S                 &kp D           &kp F          &kp G                      &kp DOWN           &mo 7        &kp SPACE                                      &kp RIGHT_GUI                                &mo 1                   &kp RIGHT                   &kp H    &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
+ &kp LEFT_SHIFT   &kp Z                           &kp X                 &kp C           &kp V          &kp B                         &none           &none     &kp LEFT_ALT                    &none      &none      &kp RIGHT_ALT                                &none                       &none                   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH    &mo 4
+        &mo 1   &mo 2  &mt LEFT_CONTROL DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp BACKSPACE            &hht LEFT_SHIFT COLON  &kp LEFT_GUI  &kp RIGHT_SHIFT  &mt RIGHT_CONTROL ENTER  &kp SPACE          &hhtl 4 TAB  &hht RIGHT_CONTROL RIGHT_PARENTHESIS  &tht RIGHT_ALT LEFT_BRACKET &tht RGUI RIGHT_BRACKET &kp TAB
             >;
         };
 
@@ -60,7 +85,7 @@
         layer_fn {
             bindings = <
  &kp F1  &kp F2        &kp F3            &kp F4            &kp F5  &kp F6            &tog 1   &mo 3  &kp F7  &kp F8  &kp F9                 &kp F10  &kp F11  &kp F12
- &trans  &trans        &trans            &trans            &trans  &trans             &none   &none  &trans  &trans  &trans  &macro_chrome_devtools   &trans   &trans
+ &trans  &trans        &trans            &trans            &trans  &trans             &none   &none  &trans  &trans  &trans  &trans   &trans   &trans
  &trans  &trans        &trans            &trans            &trans  &trans             &none  &trans  &trans                                  &trans   &trans    &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
  &trans  &trans  &kp K_VOL_DN  &kp K_PLAY_PAUSE  &kp K_PLAY_PAUSE  &trans             &none   &none  &trans   &none   &none                  &trans    &none    &none    &trans    &trans  &trans     &trans  &trans  &trans
  &trans  &trans     &kp LCTRL          &kp LALT          &kp LGUI  &trans            &trans  &trans  &trans  &trans  &trans                  &trans   &trans   &trans    &trans    &trans
@@ -100,9 +125,9 @@
         layer_linux_fn {
             bindings = <
  &kp F1  &kp F2  &kp F3                 &kp F4  &kp F5  &kp F6            &tog 1   &mo 3  &kp F7  &kp F8  &kp F9                       &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans                 &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &macro_chrome_devtools_linux   &trans   &trans
+ &trans  &trans  &trans                 &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
  &trans  &trans  &trans                 &trans  &trans  &trans            &trans  &trans  &trans                                        &trans   &trans   &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &macro_chrome_console  &trans  &trans            &trans  &trans  &trans  &trans  &trans                        &trans   &trans   &trans    &trans    &trans  &trans     &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans                        &trans   &trans   &trans    &trans    &trans  &trans     &trans  &trans  &trans
  &trans   &mo 1  &trans                 &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans                        &trans   &trans   &trans    &trans    &trans
             >;
         };
@@ -110,7 +135,7 @@
         layer_MEDIA {
             bindings = <
  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC   &kp C_CAPTIONS            &kp K_BACK     &kp C_FAST_FORWARD  &kp C_PIP            &tog 1   &mo 3  &kp K_PREV  &kp K_PLAY_PAUSE        &kp K_NEXT         &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-               &trans                &trans  &macro_save_vim      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &trans            &trans  &trans      &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &macro_vim_paste_0           &trans
+               &trans                &trans  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &trans            &trans  &trans      &trans            &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans
                &trans               &kp TAB    &kp BACKSPACE        &kp LEFT_BRACE        &kp RIGHT_BRACE     &trans            &trans   &mo 7      &trans                                                 &trans               &mo 1           &trans  &trans  &kp SPACE   &kp BACKSPACE      &kp TAB  &kp QUESTION  &trans
                &trans                &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &trans            &trans  &trans      &trans            &trans            &trans             &trans              &trans           &trans  &trans     &trans  &kp UNDERSCORE  &kp PERCENT      &kp PIPE  &trans
                &trans                &trans           &trans                &trans                 &trans     &trans            &trans  &trans      &trans            &trans            &trans             &trans              &trans           &trans  &trans     &trans
@@ -122,7 +147,7 @@
  &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &macro_cb_yank_vim_li  &macro_cb_paste_vim_li  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans                 &trans                  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
