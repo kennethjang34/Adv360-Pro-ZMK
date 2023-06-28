@@ -69,8 +69,8 @@
       &kp TAB   &kp Q                           &kp W                 &kp E           &kp R          &kp T                        &kp UP        &kp LEFT            &kp Y                    &kp U      &kp I              &kp O                                &kp P                    &kp BSLH
       &kp ESC   &kp A                           &kp S                 &kp D           &kp F          &kp G                      &kp DOWN           &mo 7        &kp SPACE                                      &kp RIGHT_GUI                                &mo 1                   &kp RIGHT                   &kp H    &kp J      &kp K    &kp L  &kp SEMI  &kp SQT
  &kp LEFT_SHIFT   &kp Z                           &kp X                 &kp C           &kp V          &kp B                         &none           &none     &kp LEFT_ALT                    &none      &none      &kp RIGHT_ALT                                &none                       &none                   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH    &mo 4
-        &mo 1   &mo 2  &mt LEFT_CONTROL DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp UNDERSCORE  &kp BACKSPACE            &hht LEFT_SHIFT DOUBLE_QUOTES
-	  	&kp LEFT_GUI  &kp RIGHT_CONTROL  &hhtl 4 ENTER  &kp SPACE          &hht RIGHT_CONTROL TAB  &hht RIGHT_ALT RIGHT_PARENTHESIS  &tht RIGHT_GUI LEFT_BRACKET &kp RIGHT_BRACKET &kp TAB
+        &mo 1   &mo 2  &mt LEFT_CONTROL DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE            &hht LEFT_SHIFT DOUBLE_QUOTES
+	  	&kp LEFT_GUI  &kp RIGHT_CONTROL  &hhtl 4 ENTER  &kp SPACE          &hht RIGHT_CONTROL RIGHT_PARENTHESIS  &hht RIGHT_ALT TAB  &tht RIGHT_GUI LEFT_BRACKET &kp RIGHT_BRACKET &kp TAB
             >;
         };
         layer_keypad {
